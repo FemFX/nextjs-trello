@@ -1,7 +1,7 @@
 "use client";
 
 import { updateList } from "@/actions/update-list";
-import FormInput from "@/components/forms/form-input";
+import FormInput from "@/components/form/form-input";
 import { useAction } from "@/hooks/use-action";
 import { List } from "@prisma/client";
 import { ElementRef, useRef, useState } from "react";
@@ -11,9 +11,10 @@ import ListOptions from "./list-options";
 
 interface ListHeaderProps {
   data: List;
+  onAddCard: () => void;
 }
 
-const ListHeader = ({ data }: ListHeaderProps) => {
+const ListHeader = ({ data, onAddCard }: ListHeaderProps) => {
   const [title, setTitle] = useState<string>(data.title);
   const [isEditing, setIsEditing] = useState<boolean>(false);
 
@@ -91,7 +92,7 @@ const ListHeader = ({ data }: ListHeaderProps) => {
           {data.title}
         </div>
       )}
-      <ListOptions data={data} onAddCard={() => {}} />
+      <ListOptions data={data} onAddCard={onAddCard} />
     </div>
   );
 };

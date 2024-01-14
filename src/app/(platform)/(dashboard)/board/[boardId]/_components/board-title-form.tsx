@@ -1,7 +1,7 @@
 "use client";
 
 import { updateBoard } from "@/actions/update-board";
-import FormInput from "@/components/forms/form-input";
+import FormInput from "@/components/form/form-input";
 import { Button } from "@/components/ui/button";
 import { useAction } from "@/hooks/use-action";
 import { Board } from "@prisma/client";

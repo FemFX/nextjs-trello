@@ -3,7 +3,7 @@ import Logo from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import MobileSidebar from "./mobile-sidebar";
-import FormPopover from "@/components/forms/form-popover";
+import FormPopover from "@/components/form/form-popover";
 
 const Navbar = () => {
   return (

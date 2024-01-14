@@ -1,6 +1,6 @@
 import { HelpCircle, User2 } from "lucide-react";
 import Hint from "@/components/hint";
-import FormPopover from "@/components/forms/form-popover";
+import FormPopover from "@/components/form/form-popover";
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/db";

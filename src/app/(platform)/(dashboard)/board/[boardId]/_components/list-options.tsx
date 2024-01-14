@@ -2,7 +2,7 @@
 
 import { copyList } from "@/actions/copy-list";
 import { deleteList } from "@/actions/delete-list";
-import FormSubmit from "@/components/forms/form-button";
+import FormSubmit from "@/components/form/form-button";
 import { Button } from "@/components/ui/button";
 import {
   Popover,
